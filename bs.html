@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+  .navbar{
+	margin-bottom: 0;
+	border-radius: 0;
+	background-color: #000000;
+	color: #FFF;
+	padding: 1% 0;
+	font-size: 1.2em;
+	border: 0;
+  }
+
+
+</style>
+</head>
+<body>
+
+<script>
+	$(document).ready(function(){
+		$('[data-toggle="popover"]').popover();   
+		});
+</script>
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">UBT-Prizren</a>
+			</div>
+			<ul class="nav navbar-nav">
+			<li class="active"><a href="#">Studentat</a></li>
+			<li><a href="#">Lendet</a></li>
+			<li><a href="#">Notat</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-plus"></span> Shto Studentin</a></li>
+			</ul>
+		</div>
+	</nav>
+
+<div class="container-fluid">
+<table class="table table-hover">
+<thead>
+<tr class="success">
+	<th width="150px">Emri</th>
+	<th width="150px">Mbiemri</th>
+	<th width="300px">E-Mail</th>
+	<th width="150px">Komuna</th>
+	<th width="150px">Fotoja personale<th>
+	</tr>
+	</thead>
+	<tbody>
+	<th>Kastriot</th>
+	<th>Gashi</th>
+	<th>kastriotgashi@gmail.com</th>
+	<th>Prizren</th>
+	<th><a href="#" data-toggle="popover" title="Studenti" data-content="https://www.w3schools.com/bootstrap/img_avatar1.png"><img src="https://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object" style="width:16px"></a></th>
+	</tbody>
+	<tbody>
+	<th>Beka</th>
+	<th>Telaku</th>
+	<th>blerim.telaku@gmail.com</th>
+	<th>Prizren</th>
+	<th><a href="#" data-toggle="popover" title="Studenti"><img src="https://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object" style="width:16px"></a></th>
+</table>
+</div>
+</body>
+</html>
